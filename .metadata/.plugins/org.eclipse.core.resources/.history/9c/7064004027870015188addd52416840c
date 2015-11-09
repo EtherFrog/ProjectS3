@@ -1,0 +1,17 @@
+package edu.iut.app;
+
+public interface IApplicationLog {
+	
+	
+	void setMessage(String message);
+	String getMessage();
+	void addListener(IApplicationLogListener listener);
+	IApplicationLogListener[] getpplicationLogListeners();
+	
+	/** TP1 : Créérr les méthodes :
+	 - setMessage
+	  - getMessage
+	  - addListener
+	  - getApplicationLogListeners();
+	*/
+}

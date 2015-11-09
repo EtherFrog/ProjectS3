@@ -12,4 +12,22 @@ public class ApplicationWarningLog extends AbstractApplicationLog {
 		this.message = message;
 		super.fireMessage("[WARNING]", this.message);
 	}
+
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void addListener(IApplicationLogListener listener) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public IApplicationLogListener[] getpplicationLogListeners() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

@@ -6,15 +6,35 @@ public abstract class AbstractApplicationLog implements IApplicationLog {
 
 	protected String message;
 	/** TP1 : Tableau au sens des collections **/
-	protected /*TYPE TABLEAU*/ listeners;
-	
+	protected ArrayList<IApplicationLogListener> listeners;
+
 	public AbstractApplicationLog() {
 		message = null;
-		listeners = new /*TYPE TABLEAU*/();
-	}
-	
-    /** TP1 : Fonction venant de l'interface par hÃ©ritage */
+		//???
+		/**/listeners.add(new IApplicationLogListener(){
 
+			@Override
+			public void newMessage(String level, String message) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+
+	}
+
+	public void AjoutLogListener(){
+
+
+	}
+
+	public ArrayList<IApplicationLogListener> GetListeners(){
+
+		return listeners;
+
+	}
+
+	/** TP1 : Fonction venant de l'interface par héritage */
+	public abstract void setMessage(String message);
 
 	/** Listener action */
 	protected void fireMessage(String level, String message) {
