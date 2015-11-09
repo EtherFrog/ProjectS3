@@ -14,8 +14,8 @@ public abstract class AbstractApplicationLog implements IApplicationLog {
 		/**/listeners.add(new IApplicationLogListener(){
 
 			@Override
-			public void newMessage(String level, String message2) {
-				message = message2;
+			public void newMessage(String level, String message) {
+				// TODO Auto-generated method stub
 
 			}
 		});

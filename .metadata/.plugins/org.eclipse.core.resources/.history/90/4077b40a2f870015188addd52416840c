@@ -12,7 +12,7 @@ public abstract class AbstractApplicationMessageDialog implements
 	}
 	
 	
-	protected abstract void showMessage(String level, String message);
+	public abstract void showMessage(String level, String message);
 	/* TP1 ajouter une méthode abstraite showMessage */
 
 }
